@@ -41,6 +41,9 @@ public:
     // New Year's Day            Jan 1
     static datenamespace::year_month_day new_years_day(const uint16_t y);
 
+    // New Year's Day            Jan 1
+    static datenamespace::year_month_day easter(const uint16_t y);
+
     // Good Friday: Friday before Easter
     static datenamespace::year_month_day good_friday(const uint16_t y);
 

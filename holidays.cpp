@@ -55,6 +55,11 @@ year_month_day holidays::new_years_day(const uint16_t y)
     return year(y)/1/1;
 }
 
+year_month_day holidays::easter(const uint16_t y)
+{
+    return easter::western_gregorian(y);
+}
+
 year_month_day holidays::good_friday(const uint16_t y)
 {
     return sys_days{easter::western_gregorian(y)} - days{2};
@@ -184,7 +189,7 @@ year_month_day holidays_de::corpus_christi(const uint16_t y)
 
 year_month_day holidays_de::assumption(const uint16_t y)
 {
-    return year_month_day{year(y)/8/28};
+    return year_month_day{year(y)/8/15};
 }
 
 year_month_day holidays_de::childrens_day(const uint16_t y)
