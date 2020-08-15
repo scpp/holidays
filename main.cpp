@@ -39,12 +39,15 @@ int main(int argc, char** argv)
     cout << "German holidays (general only) in " << y << endl;
     cout << holidays_de::new_years_day(y) << endl;
     cout << holidays_de::good_friday(y) << endl;
+    cout << holidays_de::easter(y) << endl;
+    cout << holidays_de::easter_monday(y) << endl;
+    cout << holidays_de::labor_day(y) << endl;
     cout << holidays_de::pentecost(y) << endl;
     cout << holidays_de::pentecost_monday(y) << endl;
     cout << holidays_de::ascension(y) << endl;
     cout << holidays_de::german_unification(y) << endl;
     cout << holidays_de::christmas_day(y) << endl;
     cout << holidays_de::christmas_day2(y) << endl;
-    
+
     return 0;
 }
