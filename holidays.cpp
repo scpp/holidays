@@ -40,7 +40,7 @@ year_month_day easter::eastern_julian(const uint16_t y)
     const uint16_t p = d + e + 114;
     const uint16_t easterMonth = p/31;
     const uint16_t easterDay = (p%31)+1;
-    return year(y)/easterMonth/easterDay;  // +13 days to convert from Julian to Gregorian calender
+    return year(y)/easterMonth/easterDay;
 }
 
 year_month_day easter::eastern_gregorian(const uint16_t y)
